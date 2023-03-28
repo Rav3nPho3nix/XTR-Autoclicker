@@ -15,7 +15,7 @@ def loop(x,y):
         if keyboard.is_pressed('q'):break
         elif keyboard.is_pressed('r'):click()
         elif keyboard.is_pressed(stopButton):pause(x,y)
-        sleep(delay/1000)
+        sleep(int(delay)/1000)
 def click():
     print("Click where you want to autoclick")
     mouse.wait(button='left')
